@@ -1,0 +1,12 @@
+import axios from 'axios';
+import { API_URL } from '../config';
+
+export async function addTaskTag(taskId: string, tag: string) {
+  try {
+    const response = await axios.post(`${API_URL}/task/${taskId}/tag`, { tag });
+    return response.data;
+  } catch (error) {
+    console.error('Error adding tag to task:', error);
+    throw error;
+  }
+}

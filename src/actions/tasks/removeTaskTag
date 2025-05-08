@@ -1,0 +1,12 @@
+import axios from 'axios';
+import { API_URL } from '../config';
+
+export async function removeTaskTag(taskId: string, tag: string) {
+  try {
+    const response = await axios.delete(`${API_URL}/task/${taskId}/tag`, { data: { tag } });
+    return response.data;
+  } catch (error) {
+    console.error('Error removing tag from task:', error);
+    throw error;
+  }
+}

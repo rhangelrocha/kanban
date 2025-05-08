@@ -1,0 +1,9 @@
+.brand {
+    background-color: hsl(var(--primary));
+}
+:global(.dark) .brand {
+    background-color: hsl(var(--primary));
+}
+:global(.dark) .svg__logo {
+    fill: hsl(var(--background));
+}

@@ -1,0 +1,12 @@
+import axios from 'axios';
+import { API_URL } from '../config';
+
+export async function deliverPartTask(taskId: string) {
+  try {
+    const response = await axios.post(`${API_URL}/task/${taskId}/deliverPart`);
+    return response.data;
+  } catch (error) {
+    console.error('Error partially delivering task:', error);
+    throw error;
+  }
+}

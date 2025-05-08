@@ -1,0 +1,44 @@
+.Sidebar {
+  width: 270px;
+  transition: all 0.5s ease-in-out;
+  border-right: 1px solid hsl(var(--border));
+  position: sticky;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  background-color: hsl(var(--background));
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.Sidebar:global(.closed) {
+  width: 50px;
+}
+
+.Sidebar>.openContent>header {
+  background-color: hsl(var(--background));
+  border-bottom: solid 1px  hsl(var(--border));
+}
+
+.Sidebar>.openContent>footer {
+  background-color: hsl(var(--background));
+  border-top: solid 1px  hsl(var(--border));
+}
+
+.activeFiltersBadge .avatar{
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.openContent{
+  width: 270px;
+  overflow: hidden;
+
+}
+.closedContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+}

@@ -1,0 +1,12 @@
+import axios from 'axios';
+import { API_URL } from '../config';
+
+export async function pauseTask(taskId: string) {
+  try {
+    const response = await axios.post(`${API_URL}/task/${taskId}/pause`);
+    return response.data;
+  } catch (error) {
+    console.error('Error pausing task:', error);
+    throw error;
+  }
+}

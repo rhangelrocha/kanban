@@ -1,0 +1,12 @@
+import axios from 'axios';
+import { API_URL } from '../config';
+
+export async function markTaskAsUrgent(taskId: string) {
+  try {
+    const response = await axios.post(`${API_URL}/task/${taskId}/markAsUrgent`);
+    return response.data;
+  } catch (error) {
+    console.error('Error marking task as urgent:', error);
+    throw error;
+  }
+}

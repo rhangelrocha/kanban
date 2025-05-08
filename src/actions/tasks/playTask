@@ -1,0 +1,12 @@
+import axios from 'axios';
+import { API_URL } from '../config';
+
+export async function playTask(taskId: string) {
+  try {
+    const response = await axios.post(`${API_URL}/task/${taskId}/play`);
+    return response.data;
+  } catch (error) {
+    console.error('Error playing task:', error);
+    throw error;
+  }
+}

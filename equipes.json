@@ -1,0 +1,79 @@
+{
+  "equipes" : [
+      {
+        "id": "1",
+        "nome": "Artes",
+        "lider": { "value": "user4", "label": "User 4" },
+        "membros": [
+          { "value": "user1", "label": "User 1" },
+          { "value": "user2", "label": "User 2" },
+          { "value": "user3", "label": "User 3" }
+        ],
+        "centro_de_custo": "CC-123",
+        "tarefas_na_fila": 10,
+        "tarefas_abertas": 0,
+        "tarefas_acompanhadas": 5,
+        "tarefas_finalizadas": 1
+      },
+      {
+        "id": "2",
+        "nome": "Equipe 2",
+        "lider": { "value": "user5", "label": "User 5" },
+        "membros": [
+          { "value": "user6", "label": "User 6" },
+          { "value": "user7", "label": "User 7" },
+          { "value": "user8", "label": "User 8" }
+        ],
+        "centro_de_custo": "CC-456",
+        "tarefas_na_fila": 8,
+        "tarefas_abertas": 5,
+        "tarefas_acompanhadas": 7,
+        "tarefas_finalizadas": 6
+      },
+      {
+        "id": "3",
+        "nome": "Equipe 3",
+        "lider": { "value": "user9", "label": "User 9" },
+        "membros": [
+          { "value": "user10", "label": "User 10" },
+          { "value": "user11", "label": "User 11" },
+          { "value": "user12", "label": "User 12" }
+        ],
+        "centro_de_custo": "CC-789",
+        "tarefas_na_fila": 8,
+        "tarefas_abertas": 7,
+        "tarefas_acompanhadas": 4,
+        "tarefas_finalizadas": 4
+      },
+      {
+        "id": "4",
+        "nome": "Equipe 4",
+        "lider": { "value": "user13", "label": "User 13" },
+        "membros": [
+          { "value": "user14", "label": "User 14" },
+          { "value": "user15", "label": "User 15" },
+          { "value": "user16", "label": "User 16" }
+        ],
+        "centro_de_custo": "CC-1011",
+        "tarefas_na_fila": 15,
+        "tarefas_abertas": 12,
+        "tarefas_acompanhadas": 10,
+        "tarefas_finalizadas": 11
+      },
+      {
+        "id": "5",
+        "nome": "Equipe 5",
+        "lider": { "value": "user17", "label": "User 17" },
+        "membros": [
+          { "value": "user18", "label": "User 18" },
+          { "value": "user19", "label": "User 19" },
+          { "value": "user20", "label": "User 20" }
+        ],
+        "centro_de_custo": "CC-1213",
+        "tarefas_na_fila": 7,
+        "tarefas_abertas": 4,
+        "tarefas_acompanhadas": 5,
+        "tarefas_finalizadas": 8
+      }
+  ]
+}

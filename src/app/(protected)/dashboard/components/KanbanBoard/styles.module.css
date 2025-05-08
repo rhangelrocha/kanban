@@ -1,0 +1,56 @@
+html:global(.dark) .board {
+  background-color: #010611;
+
+}
+
+.columns {
+  width: 100%;
+  display: flex;
+  gap: 1em;
+  height: 100%;
+
+}
+
+.columns>li {
+  background-color: rgb(240, 244, 249);
+  /* width: 280px; */
+  /* background-color: #020817; */
+  display: flex;
+  flex-direction: column;
+}
+
+html:global(.dark) .columns>li {
+  background-color: hsl(var(--popover));
+
+}
+
+.cards {
+  overflow-y: hidden;
+  padding: 0.5rem;
+  height: 100%;
+}
+.cards >div {
+  padding-right: 0.5rem;
+}
+
+.cards>div>div{
+}
+.cards>div>div>div{
+  width: 100%;
+}
+
+.addCardCol {
+  text-align: center;
+  border: solid 1px hsl(var(--border));
+  padding: 0.3rem;
+  border-radius: var(--radius);
+  margin: 0.3rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.addCardCol:hover {
+  background-color: hsl(var(--primary));
+  color: #FFF;
+}

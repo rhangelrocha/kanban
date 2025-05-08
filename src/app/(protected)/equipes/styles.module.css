@@ -1,0 +1,17 @@
+.page_content{
+  padding: 18px 24px 0px;
+
+  .header_page{
+ 
+    margin-bottom: 14px;
+
+    .title_page{
+      font-size: 24px;
+      font-weight: bold;
+  
+    }
+
+  }
+
+}
+

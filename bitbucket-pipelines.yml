@@ -1,0 +1,15 @@
+image: atlassian/default-image:latest
+pipelines:
+  branches:
+    prod:
+      - step:
+          deployment: Production
+          script:
+            - ssh -o StrictHostKeyChecking=no -i ~/.ssh/config $SSH_USER@$SSH_HOST "bash /home/$SSH_USER/deploy_bitbucket.sh"
+            - echo "Brach Development | Deploy Concluído!"
+    main:
+      - step:
+          deployment: Development
+          script:
+            - ssh -o StrictHostKeyChecking=no -i ~/.ssh/config $SSH_USER@$SSH_HOST "bash /home/$SSH_USER/deploy_bitbucket.sh"
+            - echo "Brach Development | Deploy Concluído!"
